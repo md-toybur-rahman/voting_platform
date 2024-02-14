@@ -61,19 +61,25 @@ div.kites_voting_candidates_content {
 	margin-top: 32px;
 }
 
-div.kites_voting_candidates_card{
+div.kites_voting_candidates_card {
 	width: 370px;
 	margin: 0 auto;
 }
 
 div.kites_voting_candidates_image_container {
-	padding: 9px 13px 0px 19px;
+	padding: 9px 13px 0px 15px;
 	background-color: #EFF1F3;
+	overflow: hidden;
 }
 
 img.kites_voting_candidates_image {
 	width: 337px;
 	height: 231px;
+	transition: 0.3s;
+}
+
+img.kites_voting_candidates_image:hover {
+	transform: scale(1.1);
 }
 
 div.kites_voting_candidates_details {
@@ -102,6 +108,7 @@ button.kites_voting_vote_now_button {
 	cursor: pointer;
 }
 
+
 footer.kites_voting_footer {
 	display: flex;
 	justify-content: center;
@@ -122,60 +129,72 @@ button.kites_voting_see_more_button {
 }
 
 @media screen and (max-width: 1280px) {
-	header.kites_voting_banner_container{
+	header.kites_voting_banner_container {
 		padding-right: 5%;
 	}
-	header div.kites_voting_banner_content{
+
+	header div.kites_voting_banner_content {
 		margin-bottom: 10%;
 	}
+
 	h1.kites_voting_banner_title {
 		font-size: 65px;
 		line-height: 75px;
 	}
-	p.kites_voting_banner_description{
+
+	p.kites_voting_banner_description {
 		margin-top: 25px;
 	}
-	h3.kites_voting_candidates_title{
+
+	h3.kites_voting_candidates_title {
 		text-align: center;
 	}
-	div.kites_voting_candidates_content{
+
+	div.kites_voting_candidates_content {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+
 @media screen and (max-width: 768px) {
-	header.kites_voting_banner_container{
+	header.kites_voting_banner_container {
 		height: 500px;
 		align-items: center;
 		justify-content: center;
 		padding-right: 0;
 		text-align: center;
 	}
-	header div.kites_voting_banner_content{
+
+	header div.kites_voting_banner_content {
 		margin-bottom: 0;
 	}
+
 	h1.kites_voting_banner_title {
 		font-size: 45px;
 		line-height: 55px;
 	}
-	p.kites_voting_banner_description{
+
+	p.kites_voting_banner_description {
 		margin-top: 25px;
 		max-width: auto;
 	}
-	div.kites_voting_candidates_card{
+
+	div.kites_voting_candidates_card {
 		width: 300px;
 		margin: 0 auto;
 	}
+
 	img.kites_voting_candidates_image {
 		width: 267px;
 		height: 200px;
 	}
-	div.kites_voting_candidates_content{
+
+	div.kites_voting_candidates_content {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
-@media screen and (max-width: 665px){
-	div.kites_voting_candidates_content{
+@media screen and (max-width: 665px) {
+	div.kites_voting_candidates_content {
 		grid-template-columns: repeat(1, 1fr);
 		gap: 80px 35px;
 	}
